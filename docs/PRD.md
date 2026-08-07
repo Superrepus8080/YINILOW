@@ -428,11 +428,14 @@ Search upgrade, clustered Vert.x, CDN, BNPL, native apps, ML recs.
 
 ## 18. Appendix — Design source mapping
 
-Derived from YINILOW design handoff / mockups:
+**Canonical UX/UI:** see [`docs/UX_UI.md`](./UX_UI.md) (locked from 4 uploaded screens: Unified Navigation, Home & Electronics home, Clothing & Accessories homes).
 
-- Fashion home: “DRIP FROM OUR ROOTS”, Dig the Pile, Lucky Pull, Stylist Recommends, YINILOW LIVE pile pulls  
-- Home & Electronics: Energy-smart living hero, category icon rail, Find My Match, Studio Restore Session live  
-- Shared: yellow/black brand system, Ghana location, GHS pricing, unified cart messaging, seller CTA, app store badges  
+Summary:
+
+- Unified chrome: world switcher, shared account/cart/saved/checkout  
+- Fashion home: “DRIP FROM OUR ROOTS”, Dig the Pile, Lucky Pull, Stylist Recommends  
+- Home & Electronics: energy-smart hero, category icon rail, Energy Smart / Top Picks carousels, Find My Match  
+- Shared: yellow/black brand system, Ghana location, GHC pricing display, seller CTA, app store badges  
 
 ---
 
