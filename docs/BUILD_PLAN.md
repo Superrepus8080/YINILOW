@@ -26,7 +26,7 @@ This plan turns the PRD into a build sequence. Each phase ends with something de
 | Live video (MVP) | **Embed URL placeholder** (YouTube/Mux URL on show) | Chat/deals are ours |
 | Local devops | **Docker Compose** for Postgres + Redis | API/web run on host |
 | API style | REST JSON `/api/v1/*` + WebSocket `/ws/live` | OpenAPI later |
-| Styling | CSS variables + modular CSS (no heavy UI kit yet) | Match yellow/black brand |
+| Styling | CSS variables + modular CSS (no heavy UI kit yet) | Follow [UX_UI.md](./UX_UI.md) (new locked mockups) |
 | Hosting (later) | TBD (Render/Railway/VPS) | Bind `0.0.0.0:$PORT` when we deploy |
 
 ---
@@ -83,7 +83,7 @@ YINILOW/
 | 0.1 | Monorepo scaffold + README run instructions | `docker compose up -d` starts DB/Redis |
 | 0.2 | Vert.x app: health `GET /api/v1/health`, CORS, config from env | `curl` returns `{ status: "ok" }` |
 | 0.3 | Flyway first migration: `users`, `sellers`, empty schema stubs | Migrations apply on API start |
-| 0.4 | React Vite app: brand shell (header stub, yellow/black tokens, routing) | `npm run dev` shows YINILOW home placeholder |
+| 0.4 | React Vite app: tokens + **AppHeader / WorldSwitcher** shell per [UX_UI.md](./UX_UI.md) | `npm run dev` shows unified chrome; world toggle switches fashion/home routes |
 | 0.5 | Dev proxy: web → api | Browser can hit health via `/api` |
 | 0.6 | Seed script (optional SQL) | One admin/demo user documented |
 

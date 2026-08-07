@@ -6,6 +6,7 @@ Curated thrift + home & electronics marketplace for Ghana, with live commerce.
 
 - **[Product Requirements Document (PRD)](docs/PRD.md)** — scope, stack, architecture
 - **[Build Plan](docs/BUILD_PLAN.md)** — phased implementation, locked decisions, ticket order
+- **[UX/UI Source of Truth](docs/UX_UI.md)** — locked navigation + storefront mockups (4 screens)
 
 ## Planned stack
 
