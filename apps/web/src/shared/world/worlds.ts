@@ -125,7 +125,7 @@ export const HOME_PRODUCTS: ProductSeed[] = [
     badge: 'ENERGY SMART',
     rating: 4.6,
     reviews: 88,
-    image: 'https://images.unsplash.com/photo-1631545806609-5b0c5a1b8f2d?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1585338107529-13afc5595a1d?auto=format&fit=crop&w=600&q=80',
   },
   {
     id: 'h3',
