@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | **Based on** | [PRD v1.0](./PRD.md) |
-| **Status** | Ready to execute |
+| **Status** | Phase 0 in progress / scaffolding complete |
 | **Repo layout** | Monorepo |
 | **Last updated** | 2026-08-07 |
 

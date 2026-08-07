@@ -8,17 +8,53 @@ Curated thrift + home & electronics marketplace for Ghana, with live commerce.
 - **[Build Plan](docs/BUILD_PLAN.md)** — phased implementation, locked decisions, ticket order
 - **[UX/UI Source of Truth](docs/UX_UI.md)** — locked navigation + storefront mockups (4 screens)
 
-## Planned stack
+## Stack
 
 | Layer | Technology |
 |---|---|
-| Backend | Eclipse Vert.x (Java 21) |
-| Frontend | React.js (Vite + TypeScript) |
+| Backend | Eclipse Vert.x (Java 21) — `apps/api` |
+| Frontend | React + Vite + TypeScript — `apps/web` |
 | Database | PostgreSQL 16 |
-| Cache / realtime fan-out | Redis 7 |
-| Realtime | WebSockets (Vert.x) |
-| Media | S3-compatible object storage + third-party live video |
+| Cache | Redis 7 |
+| Realtime | WebSockets (Phase 4) |
 
-## Status
+## Quick start
 
-PRD + build plan ready. **Next: Phase 0 foundations** (Docker Compose, Vert.x health API, React shell).
+### 1. Infrastructure
+
+```bash
+# Preferred
+docker compose up -d
+
+# Or local Postgres/Redis with:
+#   DB: yinilow / yinilow @ localhost:5432/yinilow
+#   Redis: localhost:6379
+cp .env.example .env
+```
+
+### 2. API
+
+```bash
+cd apps/api
+mvn -DskipTests package
+mvn exec:java
+# Health: http://localhost:8080/api/v1/health
+```
+
+### 3. Web
+
+```bash
+cd apps/web
+npm install
+npm run dev
+# App: http://localhost:5173  (proxies /api → :8080)
+```
+
+## Phase 0 status
+
+- [x] Monorepo + Docker Compose
+- [x] Vert.x health + Flyway baseline (`users`, `sellers`) + seed admin
+- [x] React shell with world switcher (Fashion / Home)
+- [x] Vite `/api` proxy
+
+**Next:** Phase 1 — auth + dual-vertical catalog.

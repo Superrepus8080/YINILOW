@@ -1,0 +1,16 @@
+.placeholder {
+  padding: 2rem 0;
+  max-width: 40rem;
+}
+
+.placeholder h1 {
+  font-family: var(--font-display);
+  margin: 0.3rem 0 0.75rem;
+}
+
+.placeholder code {
+  background: #fff;
+  border: 1px solid var(--yinilow-line);
+  border-radius: 8px;
+  padding: 0.1rem 0.35rem;
+}

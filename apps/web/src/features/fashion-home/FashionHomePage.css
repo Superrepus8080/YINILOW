@@ -1,0 +1,129 @@
+.fashion-hero .hero h1 {
+  max-width: 10ch;
+}
+
+.hero__badges {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.hero__badges li {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--yinilow-ink);
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.65rem;
+  background: #fff;
+}
+
+.fashion-hero .hero__photo-plane {
+  background:
+    linear-gradient(145deg, rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 0.55)),
+    radial-gradient(circle at 30% 20%, rgba(255, 230, 0, 0.55), transparent 45%),
+    linear-gradient(120deg, #d9d3c7, #8f8a82 45%, #1d1d1d);
+}
+
+.value-row {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+  border-block: 1px solid var(--yinilow-line);
+}
+
+.value-row li {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.value-row strong {
+  font-size: 0.85rem;
+}
+
+.value-row span {
+  font-size: 0.78rem;
+  color: var(--yinilow-muted);
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.tile {
+  background: #fff;
+  border: 1px solid var(--yinilow-line);
+  border-radius: 16px;
+  padding: 1.1rem;
+  min-height: 140px;
+}
+
+.tile--accent {
+  background: var(--yinilow-yellow);
+  border-color: transparent;
+}
+
+.tile h2 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+
+.tile p {
+  margin: 0;
+  color: var(--yinilow-muted);
+  font-size: 0.85rem;
+}
+
+.engagement-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 0.75rem;
+}
+
+.panel {
+  border-radius: 18px;
+  padding: 1.4rem;
+  display: grid;
+  gap: 0.6rem;
+  align-content: start;
+}
+
+.panel h2 {
+  margin: 0;
+  font-family: var(--font-display);
+}
+
+.panel p {
+  margin: 0;
+}
+
+.panel--dark {
+  background: #141414;
+  color: #fff;
+}
+
+.panel--yellow {
+  background: var(--yinilow-yellow);
+}
+
+@media (max-width: 900px) {
+  .tile-grid,
+  .engagement-row,
+  .value-row {
+    grid-template-columns: 1fr;
+  }
+
+  .fashion-hero .hero h1 {
+    max-width: none;
+  }
+}

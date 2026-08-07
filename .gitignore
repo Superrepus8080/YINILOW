@@ -1,0 +1,23 @@
+# Env
+.env
+.env.local
+*.local
+
+# Java / Maven
+apps/api/target/
+apps/api/.mvn/wrapper/maven-wrapper.jar
+
+# Node
+apps/web/node_modules/
+apps/web/dist/
+apps/web/.vite/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
