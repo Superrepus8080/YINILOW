@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { AppHeader } from '../shared/components/AppHeader'
+import { SiteFooter } from '../shared/components/SiteFooter'
 import './App.css'
 
 export function App() {
@@ -9,6 +10,7 @@ export function App() {
       <main className="app-main">
         <Outlet />
       </main>
+      <SiteFooter />
     </div>
   )
 }

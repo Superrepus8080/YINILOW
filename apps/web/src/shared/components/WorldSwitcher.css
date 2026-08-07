@@ -1,7 +1,7 @@
 .world-switcher {
   display: inline-flex;
-  gap: 4px;
-  padding: 4px;
+  gap: 3px;
+  padding: 3px;
   border: 1px solid var(--yinilow-line);
   border-radius: var(--radius-pill);
   background: #fff;
@@ -13,26 +13,25 @@
   background: transparent;
   color: var(--yinilow-ink);
   border-radius: var(--radius-pill);
-  padding: 0.55rem 0.9rem;
-  font-size: 0.82rem;
-  font-weight: 600;
+  padding: 0.52rem 0.95rem;
+  font-size: 0.8rem;
+  font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
-  transition: background 160ms ease, transform 160ms ease;
+  line-height: 1.1;
 }
 
 .world-switcher__btn:hover {
-  background: var(--yinilow-surface-warm);
+  background: var(--yinilow-surface-soft);
 }
 
 .world-switcher__btn.is-active {
   background: var(--yinilow-yellow);
-  transform: translateY(-1px);
 }
 
 @media (max-width: 1100px) {
   .world-switcher__btn {
     font-size: 0.72rem;
-    padding: 0.5rem 0.7rem;
+    padding: 0.48rem 0.72rem;
   }
 }

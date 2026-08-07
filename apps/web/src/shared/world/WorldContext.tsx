@@ -1,7 +1,6 @@
 import {
   createContext,
   useContext,
-  useEffect,
   useMemo,
   useState,
   type ReactNode,
@@ -15,7 +14,6 @@ interface WorldContextValue {
   setWorld: (id: WorldId) => void
   cartCount: number
   savedCount: number
-  apiStatus: 'checking' | 'ok' | 'down'
 }
 
 const WorldContext = createContext<WorldContextValue | null>(null)
@@ -30,22 +28,6 @@ export function WorldProvider({ children }: { children: ReactNode }) {
   const worldId = worldFromPath(location.pathname)
   const [cartCount] = useState(2)
   const [savedCount] = useState(0)
-  const [apiStatus, setApiStatus] = useState<'checking' | 'ok' | 'down'>('checking')
-
-  useEffect(() => {
-    let cancelled = false
-    fetch('/api/v1/health')
-      .then((res) => (res.ok ? res.json() : Promise.reject()))
-      .then(() => {
-        if (!cancelled) setApiStatus('ok')
-      })
-      .catch(() => {
-        if (!cancelled) setApiStatus('down')
-      })
-    return () => {
-      cancelled = true
-    }
-  }, [])
 
   const value = useMemo<WorldContextValue>(
     () => ({
@@ -56,9 +38,8 @@ export function WorldProvider({ children }: { children: ReactNode }) {
       },
       cartCount,
       savedCount,
-      apiStatus,
     }),
-    [worldId, navigate, cartCount, savedCount, apiStatus],
+    [worldId, navigate, cartCount, savedCount],
   )
 
   return <WorldContext.Provider value={value}>{children}</WorldContext.Provider>
