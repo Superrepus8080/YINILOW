@@ -1,20 +1,25 @@
 :root {
-  --yinilow-yellow: #ffe600;
-  --yinilow-yellow-deep: #f0d800;
-  --yinilow-ink: #0d0d0d;
-  --yinilow-ink-soft: #1a1a1a;
-  --yinilow-muted: #6a6a6a;
-  --yinilow-line: #e6e6e6;
-  --yinilow-surface: #ffffff;
-  --yinilow-surface-soft: #fafafa;
-  --yinilow-well: #f3f3f3;
-  --font-display: "Archivo", "Arial Narrow", sans-serif;
-  --font-body: "DM Sans", "Helvetica Neue", sans-serif;
-  --radius-pill: 999px;
-  --header-h: 64px;
-  color: var(--yinilow-ink);
-  background: var(--yinilow-surface);
-  font-family: var(--font-body);
+  /* Locked from mockup screenshots */
+  --yl-bg: #f7f7f7;
+  --yl-surface: #ffffff;
+  --yl-ink: #000000;
+  --yl-ink-2: #1a1a1a;
+  --yl-muted: #4b5563;
+  --yl-muted-2: #6b7280;
+  --yl-line: #e5e7eb;
+  --yl-well: #f3f4f6;
+  --yl-yellow: #f8d465;
+  --yl-yellow-home: #ffcc00;
+  --yl-hero-beige: #f3eee6;
+  --yl-radius: 14px;
+  --yl-radius-sm: 12px;
+  --yl-pill: 999px;
+  --yl-max: 1200px;
+  --font: "Montserrat", system-ui, sans-serif;
+
+  color: var(--yl-ink);
+  background: var(--yl-bg);
+  font-family: var(--font);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +39,7 @@ body,
 
 body {
   margin: 0;
-  background: var(--yinilow-surface);
+  background: var(--yl-bg);
 }
 
 button,
@@ -62,4 +67,9 @@ img {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.yl-container {
+  width: min(100% - 2rem, var(--yl-max));
+  margin-inline: auto;
 }

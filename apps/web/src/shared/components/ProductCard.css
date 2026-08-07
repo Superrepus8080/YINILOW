@@ -1,91 +1,79 @@
-.product-card {
+.p-card {
   background: #fff;
-  display: grid;
-  gap: 0.65rem;
-}
-
-.product-card__media {
-  position: relative;
-  aspect-ratio: 1 / 1.05;
-  background: var(--yinilow-well);
-  border-radius: 14px;
+  border-radius: var(--yl-radius);
   overflow: hidden;
 }
 
-.product-card__media img {
+.p-card__media {
+  aspect-ratio: 1 / 1.05;
+  background: var(--yl-well);
+  border-radius: var(--yl-radius);
+  overflow: hidden;
+}
+
+.p-card--home .p-card__media {
+  aspect-ratio: 1;
+  border-radius: var(--yl-radius-sm);
+}
+
+.p-card__media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.product-card__badge {
-  position: absolute;
-  top: 0.65rem;
-  left: 0.65rem;
-  z-index: 1;
-  background: var(--yinilow-yellow);
-  color: var(--yinilow-ink);
-  font-size: 0.65rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 0.22rem 0.45rem;
-  border-radius: 6px;
-}
-
-.product-card__fav {
-  position: absolute;
-  top: 0.55rem;
-  right: 0.55rem;
-  z-index: 1;
-  width: 2rem;
-  height: 2rem;
-  border: 0;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
-  cursor: pointer;
-  font-size: 0.95rem;
-}
-
-.product-card__body h3 {
-  margin: 0;
-  font-size: 0.95rem;
-  font-weight: 600;
-  line-height: 1.25;
-  min-height: 2.4em;
-}
-
-.product-card__rating {
-  margin: 0.2rem 0 0;
-  font-size: 0.8rem;
-  color: var(--yinilow-muted);
-}
-
-.product-card__rating span {
-  color: #9a9a9a;
-}
-
-.product-card__row {
-  margin-top: 0.35rem;
+.p-card__body {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 0.5rem;
+  padding: 0.7rem 0.15rem 0.2rem;
 }
 
-.product-card__row strong {
-  font-size: 0.98rem;
+.p-card__meta {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
 }
 
-.product-card__add {
-  width: 2rem;
-  height: 2rem;
+.p-card__meta h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.p-card__meta strong {
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.p-card__rating {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #111;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.p-card__rating > span:first-child {
+  color: var(--yl-yellow-home);
+}
+
+.p-card__reviews {
+  color: var(--yl-muted-2);
+  font-weight: 500;
+}
+
+.p-card__heart {
   border: 0;
-  border-radius: 999px;
-  background: var(--yinilow-yellow);
-  color: var(--yinilow-ink);
-  font-size: 1.2rem;
-  font-weight: 700;
+  background: transparent;
   cursor: pointer;
+  font-size: 1.05rem;
   line-height: 1;
+  padding: 0.1rem;
+  color: #111;
+  flex-shrink: 0;
 }

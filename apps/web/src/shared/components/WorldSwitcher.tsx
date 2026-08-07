@@ -8,14 +8,14 @@ export function WorldSwitcher() {
     <div className="world-switcher" role="group" aria-label="Shopping world">
       <button
         type="button"
-        className={worldId === 'fashion' ? 'world-switcher__btn is-active' : 'world-switcher__btn'}
+        className={worldId === 'fashion' ? 'ws-btn is-active' : 'ws-btn'}
         onClick={() => setWorld('fashion')}
       >
         Clothing &amp; Accessories
       </button>
       <button
         type="button"
-        className={worldId === 'home' ? 'world-switcher__btn is-active' : 'world-switcher__btn'}
+        className={worldId === 'home' ? 'ws-btn is-active' : 'ws-btn'}
         onClick={() => setWorld('home')}
       >
         Home &amp; Electronics

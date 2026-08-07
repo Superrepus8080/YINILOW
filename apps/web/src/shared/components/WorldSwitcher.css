@@ -1,37 +1,30 @@
 .world-switcher {
   display: inline-flex;
-  gap: 3px;
-  padding: 3px;
-  border: 1px solid var(--yinilow-line);
-  border-radius: var(--radius-pill);
-  background: #fff;
+  gap: 0.4rem;
   flex-shrink: 0;
 }
 
-.world-switcher__btn {
-  border: 0;
+.ws-btn {
+  border: 1px solid #111;
   background: transparent;
-  color: var(--yinilow-ink);
-  border-radius: var(--radius-pill);
-  padding: 0.52rem 0.95rem;
-  font-size: 0.8rem;
+  color: #111;
+  border-radius: var(--yl-pill);
+  padding: 0.55rem 0.95rem;
+  font-size: 0.78rem;
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
   line-height: 1.1;
 }
 
-.world-switcher__btn:hover {
-  background: var(--yinilow-surface-soft);
-}
-
-.world-switcher__btn.is-active {
-  background: var(--yinilow-yellow);
+.ws-btn.is-active {
+  background: var(--accent, var(--yl-yellow));
+  border-color: transparent;
 }
 
 @media (max-width: 1100px) {
-  .world-switcher__btn {
-    font-size: 0.72rem;
-    padding: 0.48rem 0.72rem;
+  .ws-btn {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.7rem;
   }
 }

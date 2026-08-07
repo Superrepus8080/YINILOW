@@ -2,7 +2,6 @@ import {
   createContext,
   useContext,
   useMemo,
-  useState,
   type ReactNode,
 } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
@@ -26,8 +25,6 @@ export function WorldProvider({ children }: { children: ReactNode }) {
   const location = useLocation()
   const navigate = useNavigate()
   const worldId = worldFromPath(location.pathname)
-  const [cartCount] = useState(2)
-  const [savedCount] = useState(0)
 
   const value = useMemo<WorldContextValue>(
     () => ({
@@ -36,10 +33,10 @@ export function WorldProvider({ children }: { children: ReactNode }) {
       setWorld: (id) => {
         if (id !== worldId) navigate(WORLDS[id].path)
       },
-      cartCount,
-      savedCount,
+      cartCount: worldId === 'fashion' ? 2 : 0,
+      savedCount: 0,
     }),
-    [worldId, navigate, cartCount, savedCount],
+    [worldId, navigate],
   )
 
   return <WorldContext.Provider value={value}>{children}</WorldContext.Provider>

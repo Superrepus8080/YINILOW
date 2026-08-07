@@ -4,57 +4,62 @@ import { WorldSwitcher } from './WorldSwitcher'
 import './AppHeader.css'
 
 export function AppHeader() {
-  const { world, cartCount, savedCount } = useWorld()
+  const { world, worldId, cartCount } = useWorld()
 
   return (
-    <header className="yl-header">
+    <header className={`yl-header yl-header--${worldId}`}>
       <div className="yl-header__top">
-        <div className="yl-header__inner">
-          <Link to={world.path} className="yl-brand" aria-label="YINILOW home">
-            <span className="yl-brand__star" aria-hidden="true">✦</span>
-            <span className="yl-brand__word">YINILOW</span>
+        <div className="yl-container yl-header__row">
+          <Link to={world.path} className="yl-logo" aria-label="YINILOW home">
+            <span className="yl-logo__text">YINILOW</span>
+            <span className="yl-logo__star" aria-hidden="true">✦</span>
           </Link>
 
           <WorldSwitcher />
 
           <label className="yl-search">
             <span className="sr-only">Search</span>
+            <input type="search" placeholder={world.searchPlaceholder} />
             <svg className="yl-search__icon" viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="2" />
-              <path d="M20 20l-3.5-3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              <path d="M20 20l-3.2-3.2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
-            <input type="search" placeholder={world.searchPlaceholder} />
           </label>
 
           <div className="yl-utils">
             <button type="button" className="yl-util">
-              <span className="yl-util__flag" aria-hidden="true">🇬🇭</span>
-              <span className="yl-util__label">Ghana</span>
+              <span className="yl-util__ico" aria-hidden="true">🇬🇭</span>
+              Ghana
+              <span className="yl-chevron" aria-hidden="true">▾</span>
             </button>
             <button type="button" className="yl-util">
-              <span aria-hidden="true">♡</span>
-              <span className="yl-util__label">Saved{savedCount > 0 ? ` ${savedCount}` : ''}</span>
+              <span className="yl-util__ico" aria-hidden="true">♡</span>
+              Saved
             </button>
             <button type="button" className="yl-util">
-              <span aria-hidden="true">👤</span>
-              <span className="yl-util__label">Account</span>
+              <span className="yl-util__ico" aria-hidden="true">👤</span>
+              Account
             </button>
             <button type="button" className="yl-util yl-util--cart">
-              <span aria-hidden="true">🛍️</span>
-              <span className="yl-util__label">Cart</span>
-              <span className="yl-cart-badge">{cartCount}</span>
+              <span className="yl-util__ico" aria-hidden="true">🛒</span>
+              Cart
+              <span className="yl-badge">{cartCount}</span>
             </button>
           </div>
         </div>
       </div>
 
-      <div className="yl-subnav">
-        <div className="yl-subnav__inner">
-          <nav className="yl-subnav__links" aria-label={`${world.label} categories`}>
+      <div className="yl-header__sub">
+        <div className="yl-container yl-subnav">
+          <nav className="yl-subnav__links" aria-label={`${world.label} navigation`}>
             {world.nav.map((item) => (
-              <Link key={item.href} to={item.href} className="yl-subnav__link">
+              <Link
+                key={item.href}
+                to={item.href}
+                className={item.href === world.path ? 'yl-subnav__link is-active' : 'yl-subnav__link'}
+              >
                 {item.label}
-                {item.badge ? <span className="yl-pill">{item.badge}</span> : null}
+                {item.badge ? <span className="yl-new">{item.badge}</span> : null}
               </Link>
             ))}
           </nav>

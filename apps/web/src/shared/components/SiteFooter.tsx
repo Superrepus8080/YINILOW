@@ -3,14 +3,16 @@ import './SiteFooter.css'
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <div className="site-footer__inner">
+      <div className="yl-container site-footer__grid">
         <div className="site-footer__brand">
-          <div className="yl-brand site-footer__logo">
-            <span className="yl-brand__star" aria-hidden="true">✦</span>
-            <span className="yl-brand__word">YINILOW</span>
+          <div className="yl-logo site-footer__logo">
+            <span className="yl-logo__text">YINILOW</span>
+            <span className="yl-logo__star" aria-hidden="true">✦</span>
           </div>
-          <p>Ghana&apos;s home of youth marketplace. Curated thrift, energy-smart living, one account.</p>
-          <div className="site-footer__social" aria-label="Social links">
+          <p>
+            Ghana&apos;s home of youth marketplace. Curated thrift, energy-smart living, one account.
+          </p>
+          <div className="site-footer__social" aria-label="Social">
             <span>IG</span>
             <span>TT</span>
             <span>X</span>
@@ -22,9 +24,9 @@ export function SiteFooter() {
         <div>
           <h3>Shop</h3>
           <ul>
+            <li>All Categories</li>
             <li>New Drop</li>
             <li>Dig the Pile</li>
-            <li>Home &amp; Electronics</li>
             <li>Energy Smart</li>
             <li>Stock Drops</li>
           </ul>
@@ -43,7 +45,7 @@ export function SiteFooter() {
         <div>
           <h3>About YINILOW</h3>
           <ul>
-            <li>Our Story</li>
+            <li>About Us</li>
             <li>Careers</li>
             <li>Become a Seller</li>
             <li>Press</li>
@@ -52,24 +54,35 @@ export function SiteFooter() {
 
         <div className="site-footer__connect">
           <h3>Stay Connected</h3>
-          <form className="site-footer__form" onSubmit={(e) => e.preventDefault()}>
-            <input type="email" placeholder="Email address" aria-label="Email address" />
+          <p>Get deals, drops &amp; energy smart tips.</p>
+          <form onSubmit={(e) => e.preventDefault()}>
+            <input type="email" placeholder="Enter your email" aria-label="Email" />
             <button type="submit" aria-label="Subscribe">→</button>
           </form>
           <div className="site-footer__apps">
             <span>App Store</span>
             <span>Google Play</span>
           </div>
-          <p className="site-footer__ghana">Delivery across Ghana 🇬🇭</p>
+        </div>
+
+        <div className="site-footer__map">
+          <h3>We Deliver in Ghana</h3>
+          <div className="ghana-map" aria-hidden="true">
+            <div className="ghana-map__shape" />
+            <span className="ghana-map__pin">📍</span>
+          </div>
         </div>
       </div>
 
-      <div className="site-footer__legal">
+      <div className="yl-container site-footer__legal">
         <p>© {new Date().getFullYear()} YINILOW. All rights reserved.</p>
+        <p className="site-footer__culture">
+          Made in Ghana with <span aria-hidden="true">💛</span> for the culture
+        </p>
         <div>
-          <a href="#terms">Terms</a>
-          <a href="#privacy">Privacy</a>
-          <a href="#cookies">Cookies</a>
+          <a href="#terms">Terms &amp; Conditions</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#cookies">Cookies Policy</a>
         </div>
       </div>
     </footer>

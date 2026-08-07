@@ -1,36 +1,35 @@
-import { formatGhc, type ProductSeed } from '../world/worlds'
+import { formatFashionPrice, formatHomePrice, type ProductSeed } from '../world/worlds'
 import './ProductCard.css'
 
 export function ProductCard({
   product,
-  showRating = false,
+  variant = 'fashion',
 }: {
   product: ProductSeed
-  showRating?: boolean
+  variant?: 'fashion' | 'home'
 }) {
+  const price =
+    variant === 'home' ? formatHomePrice(product.price) : formatFashionPrice(product.price)
+
   return (
-    <article className="product-card">
-      <div className="product-card__media">
-        {product.badge ? <span className="product-card__badge">{product.badge}</span> : null}
-        <button type="button" className="product-card__fav" aria-label={`Save ${product.title}`}>
-          ♡
-        </button>
+    <article className={`p-card p-card--${variant}`}>
+      <div className="p-card__media">
         <img src={product.image} alt={product.title} loading="lazy" />
       </div>
-      <div className="product-card__body">
-        <h3>{product.title}</h3>
-        {showRating && product.rating != null ? (
-          <p className="product-card__rating">
-            ★ {product.rating.toFixed(1)}
-            {product.reviews != null ? <span> ({product.reviews})</span> : null}
-          </p>
-        ) : null}
-        <div className="product-card__row">
-          <strong>{formatGhc(product.priceGhc)}</strong>
-          <button type="button" className="product-card__add" aria-label={`Add ${product.title} to cart`}>
-            +
-          </button>
+      <div className="p-card__body">
+        <div className="p-card__meta">
+          <h3>{product.title}</h3>
+          <strong>{price}</strong>
+          {variant === 'home' && product.rating != null ? (
+            <p className="p-card__rating">
+              <span aria-hidden="true">★</span> {product.rating.toFixed(1)}
+              {product.reviews != null ? <span className="p-card__reviews">({product.reviews})</span> : null}
+            </p>
+          ) : null}
         </div>
+        <button type="button" className="p-card__heart" aria-label={`Save ${product.title}`}>
+          ♡
+        </button>
       </div>
     </article>
   )
