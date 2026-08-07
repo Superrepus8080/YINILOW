@@ -1,0 +1,53 @@
+# YINILOW — Render Blueprint (preview / progress deploy)
+# API + SPA in one web service; managed Postgres + Key Value (Redis)
+
+databases:
+  - name: yinilow-db
+    plan: free
+    region: oregon
+    databaseName: yinilow
+    user: yinilow
+
+services:
+  - type: keyvalue
+    name: yinilow-redis
+    plan: free
+    region: oregon
+    maxmemoryPolicy: allkeys-lru
+    ipAllowList: []
+
+  - type: web
+    name: yinilow
+    runtime: docker
+    plan: free
+    region: oregon
+    repo: https://github.com/Superrepus8080/YINILOW
+    branch: cursor/yinilow-prd-dcec
+    dockerfilePath: ./apps/api/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/v1/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: PORT
+        value: "8080"
+      - key: HTTP_HOST
+        value: "0.0.0.0"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: yinilow-db
+          property: connectionString
+      - key: DATABASE_USER
+        fromDatabase:
+          name: yinilow-db
+          property: user
+      - key: DATABASE_PASSWORD
+        fromDatabase:
+          name: yinilow-db
+          property: password
+      - key: REDIS_URL
+        fromService:
+          name: yinilow-redis
+          type: keyvalue
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
