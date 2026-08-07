@@ -22,7 +22,7 @@ services:
     plan: free
     region: oregon
     repo: https://github.com/Superrepus8080/YINILOW
-    branch: cursor/yinilow-prd-dcec
+    branch: main
     dockerfilePath: ./apps/api/Dockerfile
     dockerContext: .
     healthCheckPath: /api/v1/health
@@ -51,3 +51,6 @@ services:
           property: connectionString
       - key: JWT_SECRET
         generateValue: true
+      # Set false after a dedicated Postgres is available
+      - key: SKIP_MIGRATIONS
+        value: "false"

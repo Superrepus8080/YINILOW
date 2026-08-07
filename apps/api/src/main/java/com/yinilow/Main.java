@@ -11,7 +11,13 @@ public final class Main {
 
   public static void main(String[] args) {
     AppConfig config = AppConfig.fromEnv();
-    FlywayMigrator.migrate(config);
+
+    boolean skipMigrations = "true".equalsIgnoreCase(System.getenv().getOrDefault("SKIP_MIGRATIONS", "false"));
+    if (skipMigrations) {
+      log.warn("SKIP_MIGRATIONS=true — starting without Flyway");
+    } else {
+      FlywayMigrator.migrate(config);
+    }
 
     Vertx vertx = Vertx.vertx();
     vertx.deployVerticle(new MainVerticle(config))
