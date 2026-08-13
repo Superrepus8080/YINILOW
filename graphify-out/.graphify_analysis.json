@@ -1,0 +1,346 @@
+{
+  "communities": {
+    "0": [
+      "apps_api_src_main_java_com_yinilow_config_appconfig",
+      "apps_api_src_main_java_com_yinilow_config_appconfig_appconfig",
+      "apps_api_src_main_java_com_yinilow_config_appconfig_appconfig_env",
+      "apps_api_src_main_java_com_yinilow_config_appconfig_appconfig_fromenv",
+      "apps_api_src_main_java_com_yinilow_config_appconfig_appconfig_normalizedatabase",
+      "apps_api_src_main_java_com_yinilow_config_appconfig_databaseparts",
+      "apps_api_src_main_java_com_yinilow_db_flywaymigrator",
+      "apps_api_src_main_java_com_yinilow_db_flywaymigrator_flywaymigrator",
+      "apps_api_src_main_java_com_yinilow_db_flywaymigrator_flywaymigrator_flywaymigrator",
+      "apps_api_src_main_java_com_yinilow_db_flywaymigrator_flywaymigrator_migrate",
+      "apps_api_src_main_java_com_yinilow_http_apirouter",
+      "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter",
+      "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter_apirouter",
+      "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter_contenttypefor",
+      "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter_health",
+      "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter_loadclasspathbytes",
+      "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter_loadclasspathtext",
+      "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter_mount",
+      "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter_sendindex",
+      "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter_servespaorasset",
+      "apps_api_src_main_java_com_yinilow_main",
+      "apps_api_src_main_java_com_yinilow_main_main",
+      "apps_api_src_main_java_com_yinilow_main_main_main",
+      "apps_api_src_main_java_com_yinilow_mainverticle",
+      "apps_api_src_main_java_com_yinilow_mainverticle_mainverticle",
+      "apps_api_src_main_java_com_yinilow_mainverticle_mainverticle_mainverticle",
+      "apps_api_src_main_java_com_yinilow_mainverticle_mainverticle_start",
+      "io_vertx_core_abstractverticle",
+      "io_vertx_core_promise",
+      "io_vertx_ext_web_router",
+      "io_vertx_ext_web_routingcontext",
+      "org_slf4j_logger",
+      "override"
+    ],
+    "1": [
+      "apps_web_tsconfig_app",
+      "apps_web_tsconfig_app_compileroptions",
+      "apps_web_tsconfig_app_compileroptions_allowarbitraryextensions",
+      "apps_web_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "apps_web_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "apps_web_tsconfig_app_compileroptions_jsx",
+      "apps_web_tsconfig_app_compileroptions_lib",
+      "apps_web_tsconfig_app_compileroptions_module",
+      "apps_web_tsconfig_app_compileroptions_moduledetection",
+      "apps_web_tsconfig_app_compileroptions_moduleresolution",
+      "apps_web_tsconfig_app_compileroptions_noemit",
+      "apps_web_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "apps_web_tsconfig_app_compileroptions_nounusedlocals",
+      "apps_web_tsconfig_app_compileroptions_nounusedparameters",
+      "apps_web_tsconfig_app_compileroptions_skiplibcheck",
+      "apps_web_tsconfig_app_compileroptions_target",
+      "apps_web_tsconfig_app_compileroptions_tsbuildinfofile",
+      "apps_web_tsconfig_app_compileroptions_types",
+      "apps_web_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "apps_web_tsconfig_app_include",
+      "apps_web_tsconfig_app_json_ref_es2023",
+      "ref_dom",
+      "ref_src",
+      "ref_vite_client"
+    ],
+    "2": [
+      "apps_web_tsconfig_node",
+      "apps_web_tsconfig_node_compileroptions",
+      "apps_web_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "apps_web_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "apps_web_tsconfig_node_compileroptions_lib",
+      "apps_web_tsconfig_node_compileroptions_module",
+      "apps_web_tsconfig_node_compileroptions_moduledetection",
+      "apps_web_tsconfig_node_compileroptions_noemit",
+      "apps_web_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "apps_web_tsconfig_node_compileroptions_nounusedlocals",
+      "apps_web_tsconfig_node_compileroptions_nounusedparameters",
+      "apps_web_tsconfig_node_compileroptions_skiplibcheck",
+      "apps_web_tsconfig_node_compileroptions_target",
+      "apps_web_tsconfig_node_compileroptions_tsbuildinfofile",
+      "apps_web_tsconfig_node_compileroptions_types",
+      "apps_web_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "apps_web_tsconfig_node_include",
+      "apps_web_tsconfig_node_json_ref_es2023",
+      "ref_node",
+      "ref_vite_config_ts"
+    ],
+    "3": [
+      "apps_web_src_app_app",
+      "apps_web_src_app_app_app",
+      "apps_web_src_app_routes_approutes",
+      "apps_web_src_main",
+      "apps_web_src_shared_components_appheader",
+      "apps_web_src_shared_components_appheader_appheader",
+      "apps_web_src_shared_components_sitefooter",
+      "apps_web_src_shared_components_sitefooter_sitefooter",
+      "apps_web_src_shared_components_worldswitcher",
+      "apps_web_src_shared_components_worldswitcher_worldswitcher",
+      "apps_web_src_shared_world_worldcontext",
+      "apps_web_src_shared_world_worldcontext_useworld",
+      "apps_web_src_shared_world_worldcontext_worldcontext",
+      "apps_web_src_shared_world_worldcontext_worldcontextvalue",
+      "apps_web_src_shared_world_worldcontext_worldfrompath",
+      "apps_web_src_shared_world_worldcontext_worldprovider",
+      "apps_web_src_shared_world_worlds_worldconfig",
+      "apps_web_src_shared_world_worlds_worldid",
+      "apps_web_src_shared_world_worlds_worlds"
+    ],
+    "4": [
+      "apps_web_src_app_routes",
+      "apps_web_src_features_fashion_home_fashionhomepage",
+      "apps_web_src_features_fashion_home_fashionhomepage_fashionhomepage",
+      "apps_web_src_features_fashion_home_fashionhomepage_tiles",
+      "apps_web_src_features_home_electronics_homeelectronicspage",
+      "apps_web_src_features_home_electronics_homeelectronicspage_category_icons",
+      "apps_web_src_features_home_electronics_homeelectronicspage_homeelectronicspage",
+      "apps_web_src_features_placeholder_placeholderpage",
+      "apps_web_src_features_placeholder_placeholderpage_placeholderpage",
+      "apps_web_src_shared_components_productcard",
+      "apps_web_src_shared_components_productcard_productcard",
+      "apps_web_src_shared_world_worlds",
+      "apps_web_src_shared_world_worlds_fashion_products",
+      "apps_web_src_shared_world_worlds_formatfashionprice",
+      "apps_web_src_shared_world_worlds_formathomeprice",
+      "apps_web_src_shared_world_worlds_home_categories",
+      "apps_web_src_shared_world_worlds_home_products",
+      "apps_web_src_shared_world_worlds_navitem",
+      "apps_web_src_shared_world_worlds_productseed"
+    ],
+    "5": [
+      "apps_web_package",
+      "apps_web_package_dependencies",
+      "apps_web_package_dependencies_react",
+      "apps_web_package_dependencies_react_dom",
+      "apps_web_package_dependencies_react_router_dom",
+      "apps_web_package_name",
+      "apps_web_package_private",
+      "apps_web_package_scripts",
+      "apps_web_package_scripts_build",
+      "apps_web_package_scripts_dev",
+      "apps_web_package_scripts_lint",
+      "apps_web_package_scripts_preview",
+      "apps_web_package_type",
+      "apps_web_package_version",
+      "react",
+      "react_dom",
+      "react_router_dom"
+    ],
+    "6": [
+      "apps_web_package_devdependencies",
+      "apps_web_package_devdependencies_oxlint",
+      "apps_web_package_devdependencies_types_node",
+      "apps_web_package_devdependencies_types_react",
+      "apps_web_package_devdependencies_types_react_dom",
+      "apps_web_package_devdependencies_vite",
+      "apps_web_package_devdependencies_vitejs_plugin_react",
+      "oxlint",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "vite",
+      "vitejs_plugin_react"
+    ],
+    "7": [
+      "apps_web_oxlintrc",
+      "apps_web_oxlintrc_plugins",
+      "apps_web_oxlintrc_rules",
+      "apps_web_oxlintrc_rules_react_only_export_components",
+      "apps_web_oxlintrc_rules_react_rules_of_hooks",
+      "apps_web_oxlintrc_schema",
+      "apps_web_package_devdependencies_typescript",
+      "ref_oxc",
+      "ref_react",
+      "ref_warn",
+      "typescript"
+    ],
+    "8": [
+      "apps_web_tsconfig",
+      "apps_web_tsconfig_files",
+      "apps_web_tsconfig_references"
+    ],
+    "9": [
+      "apps_web_vite_config"
+    ],
+    "10": [
+      "pkg_com_yinilow_yinilow_api"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1268939393939394,
+    "1": 0.08333333333333333,
+    "2": 0.1,
+    "3": 0.17543859649122806,
+    "4": 0.2046783625730994,
+    "5": 0.11764705882352941,
+    "6": 0.15384615384615385,
+    "7": 0.18181818181818182,
+    "8": 0.6666666666666666,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "apps_web_tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "apps_web_tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "degree": 15
+    },
+    {
+      "id": "apps_api_src_main_java_com_yinilow_config_appconfig_appconfig",
+      "label": "AppConfig",
+      "degree": 14
+    },
+    {
+      "id": "apps_api_src_main_java_com_yinilow_http_apirouter_apirouter",
+      "label": "ApiRouter",
+      "degree": 11
+    },
+    {
+      "id": "apps_api_src_main_java_com_yinilow_mainverticle_mainverticle",
+      "label": "MainVerticle",
+      "degree": 6
+    },
+    {
+      "id": "apps_api_src_main_java_com_yinilow_db_flywaymigrator_flywaymigrator",
+      "label": "FlywayMigrator",
+      "degree": 5
+    },
+    {
+      "id": "apps_web_src_shared_world_worldcontext_useworld",
+      "label": "useWorld()",
+      "degree": 5
+    },
+    {
+      "id": "apps_web_src_shared_components_productcard_productcard",
+      "label": "ProductCard()",
+      "degree": 5
+    },
+    {
+      "id": "apps_web_package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "apps_web_src_shared_world_worlds_worldid",
+      "label": "WorldId",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "MainVerticle",
+      "target": "AppConfig",
+      "source_files": [
+        "apps/api/src/main/java/com/yinilow/MainVerticle.java",
+        "apps/api/src/main/java/com/yinilow/config/AppConfig.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "WorldContextValue",
+      "target": "WorldConfig",
+      "source_files": [
+        "apps/web/src/shared/world/WorldContext.tsx",
+        "apps/web/src/shared/world/worlds.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "WorldContextValue",
+      "target": "WorldId",
+      "source_files": [
+        "apps/web/src/shared/world/WorldContext.tsx",
+        "apps/web/src/shared/world/worlds.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "AppHeader()",
+      "target": "useWorld()",
+      "source_files": [
+        "apps/web/src/shared/components/AppHeader.tsx",
+        "apps/web/src/shared/world/WorldContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "WorldSwitcher()",
+      "target": "useWorld()",
+      "source_files": [
+        "apps/web/src/shared/components/WorldSwitcher.tsx",
+        "apps/web/src/shared/world/WorldContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `Community 6` to `Community 5`, `Community 7`?",
+      "why": "High betweenness centrality (0.132) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `Community 7` to `Community 3`?",
+      "why": "High betweenness centrality (0.119) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `NavItem`, `allowArbitraryExtensions`, `allowImportingTsExtensions` to the rest of the system?",
+      "why": "62 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1268939393939394 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 5` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
